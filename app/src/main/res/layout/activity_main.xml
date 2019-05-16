@@ -11,21 +11,24 @@
 
         android:id="@+id/linearLayout8"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:layout_weight="1"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout7"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25">
 
         <Button
             android:id="@+id/btn_1X1"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
             android:text="स" />
@@ -33,7 +36,7 @@
         <Button
             android:id="@+id/btn_1X2"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
             android:text="कु" />
@@ -41,7 +44,7 @@
         <Button
             android:id="@+id/btn_1X3"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
             android:text="पो" />
@@ -49,7 +52,7 @@
         <Button
             android:id="@+id/btn_1X4"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
             android:text="अ" />
@@ -57,7 +60,7 @@
         <Button
             android:id="@+id/btn_1X5"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
             android:text="सा" />
@@ -65,7 +68,7 @@
         <Button
             android:id="@+id/btn_1X6"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
             android:text="हा" />
@@ -73,7 +76,7 @@
         <Button
             android:id="@+id/btn_1X7"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
             android:text="ही" />
@@ -81,7 +84,7 @@
         <Button
             android:id="@+id/btn_1X8"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
             android:text="कु" />
@@ -92,21 +95,24 @@
 
         android:id="@+id/linearLayout7"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:layout_weight="1"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.40">
 
         <Button
             android:id="@+id/btn_2X1"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
             android:text="चे" />
@@ -114,7 +120,7 @@
         <Button
             android:id="@+id/btn_2X2"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
             android:text="फा" />
@@ -122,7 +128,7 @@
         <Button
             android:id="@+id/btn_2X3"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
             android:text="टु" />
@@ -130,7 +136,7 @@
         <Button
             android:id="@+id/btn_2X4"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
             android:text="च्" />
@@ -138,7 +144,7 @@
         <Button
             android:id="@+id/btn_2X5"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
             android:text="बु" />
@@ -146,7 +152,7 @@
         <Button
             android:id="@+id/btn_2X6"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
             android:text="थ" />
@@ -154,7 +160,7 @@
         <Button
             android:id="@+id/btn_2X7"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
             android:text="मुँ" />
@@ -162,7 +168,7 @@
         <Button
             android:id="@+id/btn_2X8"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
             android:text="ल्" />
@@ -173,21 +179,24 @@
 
         android:id="@+id/linearLayout6"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:layout_weight="1"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.55">
 
         <Button
             android:id="@+id/btn_3X1"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
             android:text="र" />
@@ -195,7 +204,7 @@
         <Button
             android:id="@+id/btn_3X2"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
             android:text="नि" />
@@ -203,7 +212,7 @@
         <Button
             android:id="@+id/btn_3X3"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
             android:text="ई" />
@@ -211,7 +220,7 @@
         <Button
             android:id="@+id/btn_3X4"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
             android:text="छी" />
@@ -219,7 +228,7 @@
         <Button
             android:id="@+id/btn_3X5"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
             android:text="न" />
@@ -227,7 +236,7 @@
         <Button
             android:id="@+id/btn_3X6"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
             android:text="धो" />
@@ -235,7 +244,7 @@
         <Button
             android:id="@+id/btn_3X7"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
             android:text="ह" />
@@ -243,7 +252,7 @@
         <Button
             android:id="@+id/btn_3X8"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
             android:text="ला" />
@@ -255,21 +264,24 @@
 
         android:id="@+id/linearLayout5"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:layout_weight="1"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.7">
 
         <Button
             android:id="@+id/btn_4X1"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
             android:text="ग" />
@@ -277,7 +289,7 @@
         <Button
             android:id="@+id/btn_4X2"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
             android:text="रो" />
@@ -285,7 +297,7 @@
         <Button
             android:id="@+id/btn_4X3"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
             android:text="न" />
@@ -293,7 +305,7 @@
         <Button
             android:id="@+id/btn_4X4"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
             android:text="से" />
@@ -302,7 +314,7 @@
         <Button
             android:id="@+id/btn_4X5"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
             android:text="न" />
@@ -310,7 +322,7 @@
         <Button
             android:id="@+id/btn_4X6"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
             android:text="ना" />
@@ -318,7 +330,7 @@
         <Button
             android:id="@+id/btn_4X7"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
             android:text="ढ" />
@@ -326,7 +338,7 @@
         <Button
             android:id="@+id/btn_4X8"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
             android:text="क" />
@@ -338,21 +350,24 @@
 
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:layout_weight="1"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85">
 
         <Button
             android:id="@+id/btn_5X1"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
             android:text="ड़" />
@@ -360,7 +375,7 @@
         <Button
             android:id="@+id/btn_5X2"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
             android:text="ग" />
@@ -368,7 +383,7 @@
         <Button
             android:id="@+id/btn_5X3"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
             android:text="हा" />
@@ -376,7 +391,7 @@
         <Button
             android:id="@+id/btn_5X4"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
             android:text="ह" />
@@ -385,7 +400,7 @@
         <Button
             android:id="@+id/btn_5X5"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
             android:text="हा" />
@@ -393,7 +408,7 @@
         <Button
             android:id="@+id/btn_5X6"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
             android:text="ध" />
@@ -401,7 +416,7 @@
         <Button
             android:id="@+id/btn_5X7"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
             android:text="क" />
@@ -409,7 +424,7 @@
         <Button
             android:id="@+id/btn_5X8"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
             android:text="र" />
@@ -421,21 +436,24 @@
 
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:layout_weight="1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
 
         <Button
             android:id="@+id/btn_6X1"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
             android:text="ना" />
@@ -443,7 +461,7 @@
         <Button
             android:id="@+id/btn_6X2"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
             android:text="प" />
@@ -451,7 +469,7 @@
         <Button
             android:id="@+id/btn_6X3"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
             android:text="ना" />
@@ -459,7 +477,7 @@
         <Button
             android:id="@+id/btn_6X4"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
             android:text="त" />
@@ -468,7 +486,7 @@
         <Button
             android:id="@+id/btn_6X5"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
             android:text="ना" />
@@ -476,7 +494,7 @@
         <Button
             android:id="@+id/btn_6X6"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
             android:text="ग" />
@@ -484,7 +502,7 @@
         <Button
             android:id="@+id/btn_6X7"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
             android:text="ना" />
@@ -492,7 +510,7 @@
         <Button
             android:id="@+id/btn_6X8"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
             android:text="ना" />
@@ -512,11 +530,11 @@
         android:layout_marginBottom="8dp"
         android:background="@drawable/reset"
         android:text="Reset"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout8"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.51" />
+        app:layout_constraintVertical_bias="0.07999998" />
 
 </android.support.constraint.ConstraintLayout>
