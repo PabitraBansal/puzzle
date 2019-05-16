@@ -43,7 +43,7 @@
             android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
-            android:text="कु" />
+            android:text="फा" />
 
         <Button
             android:id="@+id/btn_1X3"
@@ -51,7 +51,7 @@
             android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
-            android:text="पो" />
+            android:text="ई" />
 
         <Button
             android:id="@+id/btn_1X4"
@@ -127,7 +127,7 @@
             android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
-            android:text="फा" />
+            android:text="कु" />
 
         <Button
             android:id="@+id/btn_2X3"
@@ -219,7 +219,7 @@
             android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
-            android:text="ई" />
+            android:text="पो" />
 
         <Button
             android:id="@+id/btn_3X4"
@@ -573,54 +573,63 @@
                     android:gravity="center_horizontal"
                     android:textSize="20sp" />
                 <TextView
+                    android:id="@+id/healthy"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="16dp"
                     android:text="निरोग"
                     android:textSize="16sp" />
                 <TextView
+                    android:id="@+id/bath"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="16dp"
                     android:text="नहाना"
                     android:textSize="16sp" />
                 <TextView
+                    android:id="@+id/mouthwash"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="16dp"
                     android:text="कुल्लाकरना"
                     android:textSize="16sp" />
                 <TextView
+                    android:id="@+id/goodhealth"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="16dp"
                     android:text="अच्छीसेहत"
                     android:textSize="16sp" />
                 <TextView
+                    android:id="@+id/soap"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="16dp"
                     android:text="साबुन"
                     android:textSize="16sp" />
                 <TextView
+                    android:id="@+id/cover"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="16dp"
                     android:text="मुँहढकना"
                     android:textSize="16sp" />
                 <TextView
+                    android:id="@+id/washhands"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="16dp"
                     android:text="हाथधोना"
                     android:textSize="16sp" />
                 <TextView
+                    android:id="@+id/wash"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="16dp"
                     android:text="रगड़ना"
                     android:textSize="16sp" />
                 <TextView
+                    android:id="@+id/clean"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="16dp"

@@ -1,10 +1,12 @@
 package com.example.tictactoe;
 
+import android.graphics.Paint;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -94,11 +96,48 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     word = word + ((Button) v).getText().toString();
                     v.setBackgroundResource(R.drawable.pressed);
                     clicked_btns.add((Button) v);
+                    TextView healthy = findViewById(R.id.healthy);
+                    TextView bath = findViewById(R.id.bath);
+                    TextView mouthwash = findViewById(R.id.mouthwash);
+                    TextView goodhealth = findViewById(R.id.goodhealth);
+                    TextView soap = findViewById(R.id.soap);
+                    TextView cover = findViewById(R.id.cover);
+                    TextView washhands = findViewById(R.id.washhands);
+                    TextView wash = findViewById(R.id.wash);
+                    TextView clean = findViewById(R.id.clean);
+
                     for (int i = 0; i < soln.length; i++) {
                         if (soln[i].equals(word)) {
                             Log.d(TAG, "onClick: CORRECT ANSWER");
                             Toast.makeText(this, "CORRECT ANSWER", Toast.LENGTH_SHORT).show();
                             btnCounter = 0;
+                            if(word.equals("निरोग")){
+                                healthy.setPaintFlags(healthy.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+                            }
+                            if(word.equals("नहाना")){
+                                bath.setPaintFlags(bath.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+                            }
+                            if(word.equals("कुल्लाकरना")){
+                                mouthwash.setPaintFlags(mouthwash.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+                            }
+                            if(word.equals("अच्छीसेहत")){
+                                goodhealth.setPaintFlags(goodhealth.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+                            }
+                            if(word.equals("साबुन")){
+                                soap.setPaintFlags(soap.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+                            }
+                            if(word.equals("मुँहढकना")){
+                                cover.setPaintFlags(cover.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+                            }
+                            if(word.equals("हाथधोना")){
+                                washhands.setPaintFlags(washhands.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+                            }
+                            if(word.equals("रगड़ना")){
+                                wash.setPaintFlags(wash.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+                            }
+                            if(word.equals("सफाई")){
+                                clean.setPaintFlags(clean.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+                            }
                             while (clicked_btns.size() != 0) {
                                 clicked_btns.get(0).setBackgroundResource(R.drawable.correct);
                                 clicked_btns.get(0).setEnabled(false);
@@ -146,11 +185,47 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     word = word + ((Button) v).getText().toString();
                     clicked_btns.add((Button) v);
                     v.setBackgroundResource(R.drawable.pressed);
+                    TextView healthy = findViewById(R.id.healthy);
+                    TextView bath = findViewById(R.id.bath);
+                    TextView mouthwash = findViewById(R.id.mouthwash);
+                    TextView goodhealth = findViewById(R.id.goodhealth);
+                    TextView soap = findViewById(R.id.soap);
+                    TextView cover = findViewById(R.id.cover);
+                    TextView washhands = findViewById(R.id.washhands);
+                    TextView wash = findViewById(R.id.wash);
+                    TextView clean = findViewById(R.id.clean);
                     for (int i = 0; i < soln.length; i++) {
                         if (soln[i].equals(word)) {
                             Log.d(TAG, "onClick: CORRECT ANSWER");
                             Toast.makeText(this, "CORRECT ANSWER", Toast.LENGTH_SHORT).show();
                             btnCounter = 0;
+                            if(word.equals("निरोग")){
+                                healthy.setPaintFlags(healthy.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+                            }
+                            if(word.equals("नहाना")){
+                                bath.setPaintFlags(bath.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+                            }
+                            if(word.equals("कुल्लाकरना")){
+                                mouthwash.setPaintFlags(mouthwash.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+                            }
+                            if(word.equals("अच्छीसेहत")){
+                                goodhealth.setPaintFlags(goodhealth.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+                            }
+                            if(word.equals("साबुन")){
+                                soap.setPaintFlags(soap.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+                            }
+                            if(word.equals("मुँहढकना")){
+                                cover.setPaintFlags(cover.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+                            }
+                            if(word.equals("हाथधोना")){
+                                washhands.setPaintFlags(washhands.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+                            }
+                            if(word.equals("रगड़ना")){
+                                wash.setPaintFlags(wash.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+                            }
+                            if(word.equals("सफाई")){
+                                clean.setPaintFlags(clean.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+                            }
                             while (clicked_btns.size() != 0) {
                                 clicked_btns.get(0).setBackgroundResource(R.drawable.correct);
                                 clicked_btns.get(0).setEnabled(false);
