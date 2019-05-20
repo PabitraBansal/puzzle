@@ -9,6 +9,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
+    android:background="@drawable/bg"
     android:orientation="vertical">
 
     <LinearLayout
@@ -20,7 +21,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="2dp"
         android:layout_weight="1"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout7"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,7 +38,7 @@
             android:text="स"
             android:textFontWeight="2dp"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_1X2"
@@ -48,7 +49,7 @@
             android:text="फा"
             android:textFontWeight="2dp"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_1X3"
@@ -59,7 +60,7 @@
             android:text="ई"
             android:textFontWeight="2dp"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_1X4"
@@ -70,7 +71,7 @@
             android:text="अ"
             android:textFontWeight="2dp"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_1X5"
@@ -81,7 +82,7 @@
             android:text="सा"
             android:textFontWeight="2dp"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_1X6"
@@ -92,7 +93,7 @@
             android:text="हा"
             android:textFontWeight="2dp"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_1X7"
@@ -103,7 +104,7 @@
             android:text="ही"
             android:textFontWeight="2dp"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_1X8"
@@ -114,7 +115,7 @@
             android:text="कु"
             android:textFontWeight="2dp"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
     </LinearLayout>
 
@@ -127,7 +128,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="2dp"
         android:layout_weight="1"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
         app:layout_constraintEnd_toEndOf="parent"
@@ -144,7 +145,7 @@
             android:text="चे"
             android:textFontWeight="2dp"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_2X2"
@@ -155,7 +156,7 @@
             android:text="कु"
             android:textFontWeight="2dp"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_2X3"
@@ -166,7 +167,7 @@
             android:text="टु"
             android:textFontWeight="2dp"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_2X4"
@@ -177,7 +178,7 @@
             android:text="च्"
             android:textFontWeight="2dp"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_2X5"
@@ -188,7 +189,7 @@
             android:text="बु"
             android:textFontWeight="2dp"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_2X6"
@@ -199,7 +200,7 @@
             android:text="थ"
             android:textFontWeight="2dp"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_2X7"
@@ -210,7 +211,7 @@
             android:text="मुँ"
             android:textFontWeight="2dp"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_2X8"
@@ -221,7 +222,7 @@
             android:text="ल्"
             android:textFontWeight="2dp"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
     </LinearLayout>
 
@@ -232,13 +233,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="2dp"
         android:layout_weight="1"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_reset"
         app:layout_constraintVertical_bias="1.0">
@@ -252,7 +253,7 @@
             android:text="र"
             android:textFontWeight="2dp"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_3X2"
@@ -263,7 +264,7 @@
             android:text="नि"
             android:textFontWeight="2dp"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_3X3"
@@ -274,7 +275,7 @@
             android:text="पो"
             android:textFontWeight="2dp"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_3X4"
@@ -285,7 +286,7 @@
             android:text="छी"
             android:textFontWeight="2dp"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_3X5"
@@ -296,7 +297,7 @@
             android:text="न"
             android:textFontWeight="2dp"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_3X6"
@@ -307,7 +308,7 @@
             android:text="धो"
             android:textFontWeight="2dp"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_3X7"
@@ -318,7 +319,7 @@
             android:text="ह"
             android:textFontWeight="2dp"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_3X8"
@@ -329,7 +330,7 @@
             android:text="ला"
             android:textFontWeight="2dp"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
 
     </LinearLayout>
@@ -341,13 +342,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="2dp"
         android:layout_weight="1"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_reset"
         app:layout_constraintVertical_bias="1.0">
@@ -361,7 +362,7 @@
             android:text="ग"
             android:textFontWeight="2dp"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_4X2"
@@ -372,7 +373,7 @@
             android:text="रो"
             android:textFontWeight="2dp"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_4X3"
@@ -383,7 +384,7 @@
             android:text="न"
             android:textFontWeight="2dp"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_4X4"
@@ -394,7 +395,7 @@
             android:text="से"
             android:textFontWeight="2dp"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
 
         <Button
@@ -406,7 +407,7 @@
             android:text="न"
             android:textFontWeight="2dp"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_4X6"
@@ -417,7 +418,7 @@
             android:text="ना"
             android:textFontWeight="2dp"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_4X7"
@@ -428,7 +429,7 @@
             android:text="ढ"
             android:textFontWeight="2dp"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_4X8"
@@ -439,7 +440,7 @@
             android:text="क"
             android:textFontWeight="2dp"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
 
     </LinearLayout>
@@ -451,10 +452,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="2dp"
         android:layout_weight="1"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
@@ -471,7 +471,7 @@
             android:text="ड़"
             android:textFontWeight="2dp"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_5X2"
@@ -482,7 +482,7 @@
             android:text="ग"
             android:textFontWeight="2dp"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_5X3"
@@ -493,7 +493,7 @@
             android:text="हा"
             android:textFontWeight="2dp"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_5X4"
@@ -504,7 +504,7 @@
             android:text="ह"
             android:textFontWeight="2dp"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
 
         <Button
@@ -516,7 +516,7 @@
             android:text="हा"
             android:textFontWeight="2dp"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_5X6"
@@ -527,7 +527,7 @@
             android:text="ध"
             android:textFontWeight="2dp"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_5X7"
@@ -538,7 +538,7 @@
             android:text="क"
             android:textFontWeight="2dp"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_5X8"
@@ -549,7 +549,7 @@
             android:text="र"
             android:textFontWeight="2dp"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
 
     </LinearLayout>
@@ -561,16 +561,15 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="2dp"
         android:layout_weight="1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_reset"
-        app:layout_constraintVertical_bias="0.78">
+        app:layout_constraintVertical_bias="0.85">
 
         <Button
             android:id="@+id/btn_6X1"
@@ -581,7 +580,7 @@
             android:text="ना"
             android:textFontWeight="2dp"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_6X2"
@@ -592,7 +591,7 @@
             android:text="प"
             android:textFontWeight="2dp"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_6X3"
@@ -603,7 +602,7 @@
             android:text="ना"
             android:textFontWeight="2dp"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_6X4"
@@ -614,7 +613,7 @@
             android:text="त"
             android:textFontWeight="2dp"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
 
         <Button
@@ -626,7 +625,7 @@
             android:text="ना"
             android:textFontWeight="2dp"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_6X6"
@@ -637,7 +636,7 @@
             android:text="ग"
             android:textFontWeight="2dp"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_6X7"
@@ -648,7 +647,7 @@
             android:text="ना"
             android:textFontWeight="2dp"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_6X8"
@@ -659,7 +658,7 @@
             android:text="ना"
             android:textFontWeight="2dp"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
 
     </LinearLayout>
@@ -684,7 +683,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.04000002" />
+        app:layout_constraintVertical_bias="0.01999998" />
 
     <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -702,7 +701,7 @@
         <android.support.v4.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@android:color/holo_orange_dark"
+            android:background="@drawable/bgslider"
             app:behavior_hideable="false"
             app:behavior_peekHeight="50dp"
             app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
