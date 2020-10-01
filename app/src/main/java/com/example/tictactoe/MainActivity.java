@@ -12,15 +12,12 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 //If correct answer already given then remove from list
-//Reset button
-
-
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button[][] buttons = new Button[6][8];
     private String word;
-    private int btnCounter=0;
+    private int btnCounter = 0;
     public static final String TAG = "MainActivity";
     private View prev;
     public String[] soln;
@@ -42,9 +39,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         soln[7] = "रगड़ना";
         soln[8] = "सफाई";
 
-        for(int i=1;i<=6;i++){
-            for(int j=1;j<=8;j++){
-                String buttonID = "btn" + "_" + i+"X"+j;
+        for(int i = 1; i <= 6; i++){
+            for(int j = 1; j <= 8; j++){
+                String buttonID = "btn" + "_" + i + "X" + j;
                 int resID = getResources().getIdentifier(buttonID, "id", getPackageName());
                 buttons[i-1][j-1] = findViewById(resID);
                 buttons[i-1][j-1].setOnClickListener(this);
@@ -56,7 +53,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onClick(View v) {
                 btnCounter = 0;
-                while(clicked_btns.size()!=0) {
+                while(clicked_btns.size() != 0) {
                     clicked_btns.get(0).setBackgroundResource(R.drawable.default_button);
                     clicked_btns.remove(0);
                 }
@@ -68,8 +65,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-
-        if(btnCounter==0){
+        if(btnCounter == 0){
             word = ((Button) v).getText().toString();
             btnCounter = 1;
             prev = v;
@@ -79,20 +75,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             v.setBackgroundResource(R.drawable.pressed);
         }
         else {
-            btnCounter=btnCounter+1;
+            btnCounter=btnCounter + 1;
 
-            if(Math.abs(prev.getId()-v.getId())==1) {
-                if(btnCounter==2){
-                    if(Math.abs(prev.getId()-v.getId())==1){
-                        horizontal_check=1;
-                    }
-                    else if(Math.abs(prev.getId()-v.getId())==8){
-                        horizontal_check=0;
-                    }
+            if(Math.abs(prev.getId() - v.getId()) == 1) {
+                if(btnCounter == 2){
+                    if(Math.abs(prev.getId() - v.getId()) == 1)
+                        horizontal_check = 1;
+                    
+                    else if(Math.abs(prev.getId() - v.getId()) == 8)
+                        horizontal_check = 0;
+                    
                 }
-                if(horizontal_check==1) {
+                if(horizontal_check == 1) {
                     prev = v;
-                    //btnCounter = btnCounter + 1;
                     word = word + ((Button) v).getText().toString();
                     v.setBackgroundResource(R.drawable.pressed);
                     clicked_btns.add((Button) v);
@@ -111,39 +106,38 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             Log.d(TAG, "onClick: CORRECT ANSWER");
                             Toast.makeText(this, "CORRECT ANSWER", Toast.LENGTH_SHORT).show();
                             btnCounter = 0;
-                            if(word.equals("निरोग")){
+                            if(word.equals("निरोग"))
                                 healthy.setPaintFlags(healthy.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
-                            }
-                            if(word.equals("नहाना")){
+                            
+                            if(word.equals("नहाना"))
                                 bath.setPaintFlags(bath.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
-                            }
-                            if(word.equals("कुल्लाकरना")){
+                            
+                            if(word.equals("कुल्लाकरना"))
                                 mouthwash.setPaintFlags(mouthwash.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
-                            }
-                            if(word.equals("अच्छीसेहत")){
+                            
+                            if(word.equals("अच्छीसेहत"))
                                 goodhealth.setPaintFlags(goodhealth.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
-                            }
-                            if(word.equals("साबुन")){
+                            
+                            if(word.equals("साबुन"))
                                 soap.setPaintFlags(soap.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
-                            }
-                            if(word.equals("मुँहढकना")){
+                            
+                            if(word.equals("मुँहढकना"))
                                 cover.setPaintFlags(cover.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
-                            }
-                            if(word.equals("हाथधोना")){
+                            
+                            if(word.equals("हाथधोना"))
                                 washhands.setPaintFlags(washhands.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
-                            }
-                            if(word.equals("रगड़ना")){
+                            
+                            if(word.equals("रगड़ना"))
                                 wash.setPaintFlags(wash.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
-                            }
-                            if(word.equals("सफाई")){
+                            
+                            if(word.equals("सफाई"))
                                 clean.setPaintFlags(clean.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
-                            }
+                            
                             while (clicked_btns.size() != 0) {
                                 clicked_btns.get(0).setBackgroundResource(R.drawable.correct);
                                 clicked_btns.get(0).setEnabled(false);
                                 clicked_btns.remove(0);
                             }
-
                         }
                     }
                     Log.d(TAG, "onClick: " + word);
@@ -151,11 +145,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
 
                 else{
-                    while(clicked_btns.size()!=0){
+                    while(clicked_btns.size() != 0){
                         clicked_btns.get(0).setBackgroundResource(R.drawable.default_button);
                         clicked_btns.remove(0);
-
                     }
+                    
                     prev = v;
                     btnCounter = 1;
                     word = ((Button) v).getText().toString();
@@ -164,24 +158,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     clicked_btns.add((Button)v);
                     v.setBackgroundResource(R.drawable.pressed);
                 }
-
-
-
             }
 
-            else if(Math.abs(prev.getId()-v.getId())==8){
-                //btnCounter=btnCounter+1;
-                if(btnCounter==2){
-                    if(Math.abs(prev.getId()-v.getId())==1){
-                        horizontal_check=1;
-                    }
-                    else if(Math.abs(prev.getId()-v.getId())==8){
-                        horizontal_check=0;
-                    }
+            else if(Math.abs(prev.getId()-v.getId()) == 8){
+                if(btnCounter == 2){
+                    if(Math.abs(prev.getId()-v.getId()) == 1)
+                        horizontal_check= 1 ;
+                    
+                    else if(Math.abs(prev.getId()-v.getId()) == 8)
+                        horizontal_check = 0;
+                    
                 }
-                if(horizontal_check==0) {
+                if(horizontal_check == 0) {
                     prev = v;
-                    //btnCounter = btnCounter + 1;
                     word = word + ((Button) v).getText().toString();
                     clicked_btns.add((Button) v);
                     v.setBackgroundResource(R.drawable.pressed);
@@ -199,51 +188,51 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             Log.d(TAG, "onClick: CORRECT ANSWER");
                             Toast.makeText(this, "CORRECT ANSWER", Toast.LENGTH_SHORT).show();
                             btnCounter = 0;
-                            if(word.equals("निरोग")){
+                            if(word.equals("निरोग"))
                                 healthy.setPaintFlags(healthy.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
-                            }
-                            if(word.equals("नहाना")){
+                            
+                            if(word.equals("नहाना"))
                                 bath.setPaintFlags(bath.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
-                            }
-                            if(word.equals("कुल्लाकरना")){
+                            
+                            if(word.equals("कुल्लाकरना"))
                                 mouthwash.setPaintFlags(mouthwash.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
-                            }
-                            if(word.equals("अच्छीसेहत")){
+                            
+                            if(word.equals("अच्छीसेहत"))
                                 goodhealth.setPaintFlags(goodhealth.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
-                            }
-                            if(word.equals("साबुन")){
+                            
+                            if(word.equals("साबुन"))
                                 soap.setPaintFlags(soap.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
-                            }
-                            if(word.equals("मुँहढकना")){
+                            
+                            if(word.equals("मुँहढकना"))
                                 cover.setPaintFlags(cover.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
-                            }
-                            if(word.equals("हाथधोना")){
+                            
+                            if(word.equals("हाथधोना"))
                                 washhands.setPaintFlags(washhands.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
-                            }
-                            if(word.equals("रगड़ना")){
+                            
+                            if(word.equals("रगड़ना"))
                                 wash.setPaintFlags(wash.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
-                            }
-                            if(word.equals("सफाई")){
+                            
+                            if(word.equals("सफाई"))
                                 clean.setPaintFlags(clean.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
-                            }
+                            
                             while (clicked_btns.size() != 0) {
                                 clicked_btns.get(0).setBackgroundResource(R.drawable.correct);
                                 clicked_btns.get(0).setEnabled(false);
                                 clicked_btns.remove(0);
                             }
-
                         }
                     }
+                    
                     Log.d(TAG, "onClick: " + word);
                     Toast.makeText(this, word, Toast.LENGTH_SHORT).show();
                 }
 
                 else{
-                    while(clicked_btns.size()!=0){
+                    while(clicked_btns.size() != 0){
                         clicked_btns.get(0).setBackgroundResource(R.drawable.default_button);
                         clicked_btns.remove(0);
-
                     }
+                    
                     prev = v;
                     btnCounter = 1;
                     word = ((Button) v).getText().toString();
@@ -252,16 +241,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     clicked_btns.add((Button)v);
                     v.setBackgroundResource(R.drawable.pressed);
                 }
-
-
             }
 
             else{
-                while(clicked_btns.size()!=0){
+                while(clicked_btns.size() != 0){
                     clicked_btns.get(0).setBackgroundResource(R.drawable.default_button);
                     clicked_btns.remove(0);
-
                 }
+                
                 prev = v;
                 btnCounter = 1;
                 word = ((Button) v).getText().toString();
@@ -271,7 +258,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 v.setBackgroundResource(R.drawable.pressed);
             }
         }
-
-
     }
 }
